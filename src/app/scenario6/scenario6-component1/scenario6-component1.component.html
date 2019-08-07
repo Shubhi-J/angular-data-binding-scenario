@@ -1,0 +1,10 @@
+<!-- parent component for app-scenario6-component2 and app-scenario6-component3 -->
+
+<h3>scenario 6!</h3>
+<p>parent</p>
+
+<!-- selector for app-scenario6-component2 taking data from child 1-->
+<app-scenario6-component2 (childEvent)="name=$event"></app-scenario6-component2>
+
+<!-- selector for app-scenario6-component3 sending data to child 2-->
+<app-scenario6-component3 [parentData]="name"></app-scenario6-component3>
